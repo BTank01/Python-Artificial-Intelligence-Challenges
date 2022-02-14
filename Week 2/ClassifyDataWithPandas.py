@@ -18,7 +18,7 @@ def PandasClassify():
 
     # Extract targets, convert to numerical values. Helps when colouring results
     classes = ["Iris-setosa", "Iris-versicolor", "Iris-virginica"]
-    targets = [classes.index(c) for c in data.values[:, :-1].astype(str)]
+    targets = [classes.index(cl) for cl in data.values[:, -1].astype(str)]
     targets = np.array(targets)
 
     ########## Same as Before ##########
