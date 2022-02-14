@@ -12,17 +12,20 @@ if __name__ == '__main__':
     |   3: Handwritten Digits Dataset       |
     |=======================================|
     """
-
-    while True:
+    select = True
+    while select:
         clearConsole = lambda: print('\n' * 150)
         clearConsole()
         useSelect = int(input(message))
         if useSelect == 1:
+            select = False
             # Uses KNN to classify flowers
             ClassifyData()
         elif useSelect == 2:
+            select = False
             # Process data using pandas
             PandasClassify()
         elif useSelect == 3:
+            select = False
             # Uses KNN to classify handwritten numbers
             classifyDigitImages()
