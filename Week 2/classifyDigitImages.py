@@ -14,3 +14,14 @@ def classifyDigitImages():
     data = digits.data
     images = digits.images
     target = digits.target
+
+    # shows an image and the value it represents. ingVal < 1797
+    """
+    imgVal = 1070
+    plt.figure()
+    plt.imshow(images[imgVal])
+    plt.title(target[imgVal])
+    plt.show()
+    """
+
+    # CLassify Data
