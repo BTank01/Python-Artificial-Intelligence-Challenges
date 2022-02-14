@@ -5,7 +5,6 @@ from sklearn.decomposition import PCA
 from sklearn.datasets import load_iris
 # uses k nearest neighbors to classify
 from sklearn.neighbors import KNeighborsClassifier
-import pandas
 
 
 def ClassifyData():
@@ -13,8 +12,6 @@ def ClassifyData():
     data = load_iris()
     inputs = data.data
     targets = data.target
-
-    # Loads iris data using pandas
 
     # Change dataset into two dimensions using PCA
     pca = PCA(n_components=2)
