@@ -10,14 +10,10 @@ msg = """
 |===========================================================|
 """
 if __name__ == '__main__':
-    houseRegression()
-
-"""
     print(msg)
     useSelect = int(input("Enter an Option: "))
     if useSelect == 1:
         classifyIrisData()
     elif useSelect == 2:
         houseRegression()
-"""
 
