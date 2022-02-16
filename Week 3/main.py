@@ -1,6 +1,23 @@
+from ClassifyIrisData import classifyIrisData
+from HouseDataRegression import  houseRegression
 
-
-# Press the green button in the gutter to run the script.
+msg = """
+|===========================================================|
+|                           Options                         |
+|   1: Classify Iris dataset.                               |
+|   2: Regression with californian house prices dataset.    |
+|                                                           |
+|===========================================================|
+"""
 if __name__ == '__main__':
-    pass
+    houseRegression()
+
+"""
+    print(msg)
+    useSelect = int(input("Enter an Option: "))
+    if useSelect == 1:
+        classifyIrisData()
+    elif useSelect == 2:
+        houseRegression()
+"""
 
